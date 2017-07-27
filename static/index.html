@@ -58,8 +58,10 @@
   <!-- Header section containing logo -->
   <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+	<img src="images/favicon.ico" alt="GNP">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <h3><i class="material-icons">chat_bubble_outline</i> Google PSO AppDev Cloud Start</h3>
+	
+        <h3><i class="material-icons">chat_bubble_outline</i> Google PSO AppDev Cloud Start</h3> 
       </div>
       <div id="user-container">
         <div hidden id="user-pic"></div>
@@ -75,12 +77,12 @@
   </header>
 
   <main class="mdl-layout__content mdl-color--grey-100">
-    <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
+    <div id="messages-card-container" style= "height: 600px" class="mdl-cell mdl-cell--12-col mdl-grid">
 
       <!-- Messages container -->
-      <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+      <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--12-col-desktop">
         <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          <div id="messages">
+          <div id="messages" style= "height: 200px">
             <span id="message-filler"></span>
           </div>
           <form id="message-form" action="#">
@@ -94,6 +96,10 @@
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="text" id="nickname">
               <label class="mdl-textfield__label" for="nickname">Nombre Descriptivo</label>
+            </div>
+	    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="telefono">
+              <label class="mdl-textfield__label" for="telefono">Número de teléfono</label>
             </div>
             </div>
             <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
